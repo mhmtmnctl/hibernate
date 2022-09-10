@@ -1,14 +1,9 @@
 package com.hb02.embeddable;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
 
 public class RunnerFetch02 {
 
@@ -27,13 +22,12 @@ public class RunnerFetch02 {
 		System.out.println(student);
 		
 		System.out.println(student.getAddress());
-
+		
 		tx.commit();
 
 		session.close();
 
 		sf.close();
-
 	}
 
 }
